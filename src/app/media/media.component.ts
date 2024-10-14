@@ -14,8 +14,8 @@ export class MediaComponent {
   calculateMedia(file: File): void {
   const reader = new FileReader( );
   reader.onload = (event: ProgressEvent<FileReader>) => {
-  const content = event. target ?. result as string;
-  const lines = content. split('\n');
+  const content = event.target?.result as string;
+  const lines = content.split('\n');
   
   const numbers1 = lines[0].split(',').map(num => parseFloat(num.trim()));
   this.media1 = this.computeAverage(numbers1);
