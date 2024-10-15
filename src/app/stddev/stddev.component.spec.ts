@@ -1,4 +1,3 @@
-stddev
 import { calcularDesviacionEstandar } from './calcularDesviacionEstandar'; 
 describe('calcularDesviacionEstandar', () => {
 
