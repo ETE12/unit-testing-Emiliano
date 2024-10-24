@@ -77,7 +77,7 @@ export class SimpsonRule {
       }
     }
   
-    static TStudent(x: number, num_seg: number, dof: number, e: number): number {
+    static TStudent(x0:number, x: number, num_seg: number, dof: number, e: number): number {
       let count = 1; 
       let check_e = 0; 
       let lon = num_seg; 
@@ -89,7 +89,7 @@ export class SimpsonRule {
         console.log("VUELTA:" + {count});
         w = x / lon; 
         suma = 0; 
-        for (let i = 0; i <= lon; i++) {
+        for (let i = x0; i <= lon; i++) {
           let xi = w * i;
           let firstPart = this.TStudent_FirstPart(xi, dof);
           let secondPart = this.TStudent_SecondPart(dof);
