@@ -27,7 +27,7 @@ export class SimpsonRule {
       const sqrtPi = Math.sqrt(Math.PI);
   
       if (Number.isInteger(x)) {
-        // Cálculo para números enteros (factorial)
+      
         let result = 1;
         for (let i = x - 1; i > 0; i--) {
           result *= i;
